@@ -1,0 +1,161 @@
+.l-top{
+    height:50px;
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    background: #fbfbfb;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.l-top p{
+    width: 100%;
+    height:50px;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    color: #353535;
+}
+.l-top p b{
+    color: #000;
+    font-size: 20px;
+    font-weight: 100;
+}
+.l-content{
+    width: 950px;
+    margin:20px auto;
+}
+.text-main{
+    width: 100%;
+    background: #ffffff;
+    padding: 10px 50px;
+    box-sizing: border-box;
+}
+.title{
+    border-bottom: 1px solid #9e9999;
+
+}
+.title h1{
+    text-align: center;
+    font-size: 38px;
+    color: #333;
+}
+.title p{
+    font-size: 14px;
+    text-indent: 10px;
+    line-height: 20px;
+    color: #9e9999;
+    text-align: right;
+}
+.title .name{
+    font-size: 16px;
+    color: #3a8bc3;
+}
+.title .name:hover{
+    color: #226287;
+}
+.title .date{
+    font-size: 15px;
+    color: #bcbbbb;
+}
+.title .date:hover{
+    color: #666;
+}
+.text-cont{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #9e9999;
+}
+.text-cont p{
+    font-size:15px;
+    text-indent: 2em;
+    line-height: 22px;
+    color: #333;
+}
+.text-cont p img{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+}
+ .stats-read{
+    height:25px;
+    line-height:25px;
+    color: #999;
+    font-size: 14px;
+}
+ .stats-read span{
+    float: right;
+}
+ .stats-read b{
+    float: left;
+}
+ .stats-read b a{
+    color: #353535;
+}
+ .stats-read i{
+    font-size: 18px;
+}
+ .mag-bd{
+     width: 100%;
+     padding:20px;
+     box-sizing: border-box;
+     background: #ffffff;
+     margin-top: 10px;
+ }
+ .mag-bd h2{
+     font-size: 18px;
+     font-weight: 100;
+     line-height: 25px;
+     padding-left:40px;
+     box-sizing: border-box;
+ }
+ .mag-bd div{
+     width: 50%;
+     overflow: hidden;
+     margin-bottom: 5px;
+     margin-left:40px;
+ }
+ .mag-bd label{
+     width: 20%;
+     height:30px;
+     line-height: 30px;
+     font-size:15px;
+     color: #9e9999;
+     float: left;
+     text-align: center;
+ }
+ .mag-bd input{
+     width:60%;
+     padding:0 10px;
+     box-sizing: border-box;
+     border-radius: 5px;
+     border:1px solid #ccc;
+     height:30px;
+     float: left;
+     outline: inherit;
+ }
+ .mag-bd textarea{
+    width: 80%;
+    box-sizing: border-box;
+     border-radius: 5px;
+     height:200px;
+     border:1px solid #ccc;
+    padding:10px;
+     outline: inherit;
+ }
+ .mag-bd button{
+     width: 70px;
+     height:40px;
+     float: right;
+     border-radius: 10px;
+     border:0;
+     background: #9e9999;
+     color: #ffffff;
+     outline: inherit;
+
+ }
+@media all and (max-width:950px){
+
+    .l-content{
+        width: 100%;
+    }
+}
