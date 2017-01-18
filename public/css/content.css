@@ -67,8 +67,7 @@
 }
 .text-cont p{
     font-size:15px;
-    text-indent: 2em;
-    line-height: 22px;
+    line-height: 25px;
     color: #333;
 }
 .text-cont img{
@@ -164,5 +163,12 @@
 
     .l-content{
         width: 100%;
+    }
+    .text-main{
+        padding: 10px;
+    }
+    .mag-bd div{
+        width: 100%;
+        margin-left: 0;
     }
 }
