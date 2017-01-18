@@ -57,8 +57,7 @@ nav a{
     margin: 0 1%;
 }
 nav a img{
-    width: 19vw;
-    height:15vw;
+    width: 100%;
 }
 nav p{
     margin-top:10px;
