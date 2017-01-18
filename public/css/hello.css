@@ -48,7 +48,7 @@
 }
 nav{
     width: 100%;
-    margin-top:30px;
+    margin-top:20px;
     overflow: hidden;
 }
 nav a{
@@ -75,7 +75,7 @@ nav p{
 }
 .gohome{
     display: block;
-    margin:20px auto;
+    margin:10px auto;
     width: 40px;
     height:40px;
     line-height: 40px;
