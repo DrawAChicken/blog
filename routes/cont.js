@@ -11,8 +11,7 @@ app.use('/:id', function(req, res) {
             name:'content',
             data:data[0]
         });
-        console.log(data[0])
-    })
+    });
 
 });
 

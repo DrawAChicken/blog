@@ -8,7 +8,7 @@ app.get('/', function(req, res) {
         res.render('hello',{
             arr:arr
         });
-    })
+    });
 });
 
 module.exports = app;

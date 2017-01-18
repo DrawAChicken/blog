@@ -49,12 +49,25 @@
 nav{
     width: 100%;
     margin-top:20px;
-    overflow: hidden;
+}
+nav:after{
+    content:'.';
+    display:block;
+    clear:both;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
 }
 nav a{
     float: left;
     width: 23%;
     margin: 0 1%;
+    background: #fff;
+}
+nav a:hover{
+    box-shadow:3px 3px 7px 1px #ccc;
+    position: relative;
+    top: -2px;
 }
 nav a img{
     width: 100%;
@@ -66,11 +79,12 @@ nav p{
     height:40px;
     width: 100%;
     word-break: break-all;
-    text-align: left;
     color: #333;
     text-align: center;
     text-overflow: ellipsis;
     overflow: hidden;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 .gohome{
     display: block;
