@@ -1,16 +1,19 @@
 {
-  "name": "myblog",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "slb",
-  "license": "ISC",
-  "dependencies": {
-    "ejs": "^2.5.5",
-    "express": "^4.14.0",
-    "mongodb": "^2.2.21"
-  }
+    "name": "myblog",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "slb",
+    "license": "ISC",
+    "dependencies": {
+        "ejs": "^2.5.5",
+        "express": "^4.14.0",
+        "mongodb": "^2.2.21"
+    },
+    "scripts": {
+        "start": "node index.js"
+    }
 }
