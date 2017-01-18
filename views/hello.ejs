@@ -21,22 +21,20 @@
             <p class="info">野生前端程序猿</p>
             <p class="info2">码农、爱思考、前端爱好者、穷折腾、三流程序员、二流切图仔</p>
             <nav>
-                <a href="/home">
-                    <img src="img/ceshi.png" alt="">
-                    <p>asdasdasdasasdasdasdasdasdd</p>
+                <% for(var i=0;i<arr.length;i++){ %>
+                <a href="/cont/<%= arr[i]._id %>">
+                    <img src="<%= arr[i].pic %>" alt="">
+                    <p><%= arr[i].title %></p>
                 </a>
-                <a href="">
-                    <img src="img/ceshi.png" alt="">
-                    <p>asdasdasdasasdasdasdasdasdd</p>
-                </a>
-                <a href="">
-                    <img src="img/ceshi.png" alt="">
-                    <p>asdasdasdasasdasdasdasdasdd</p>
-                </a>
-                <a href="">
-                    <img src="img/ceshi.png" alt="">
-                    <p>asdasdasdasasdasdasdasdasdd</p>
-                </a>
+                <% } %>
+                <!--<a href="">-->
+                    <!--<img src="img/ceshi.png" alt="">-->
+                    <!--<p>asdasdasdasasdasdasdasdasdd</p>-->
+                <!--</a>-->
+                <!--<a href="">-->
+                    <!--<img src="img/ceshi.png" alt="">-->
+                    <!--<p>asdasdasdasasdasdasdasdasdd</p>-->
+                <!--</a>-->
             </nav>
             <a class="gohome" href="/home"><i class="iconfont">&#xe6ba;</i></a>
         </div>

@@ -71,10 +71,17 @@
     line-height: 22px;
     color: #333;
 }
-.text-cont p img{
-    width: 40%;
+.text-cont img{
+    display: inline-block;
+}
+.text-cont blockquote {
     display: block;
-    margin: 0 auto;
+    border-left: 8px solid #d0e5f2;
+    padding: 5px 10px;
+    margin: 10px 0;
+    line-height: 1.4;
+    font-size: 100%;
+    background-color: #f1f1f1;
 }
  .stats-read{
     height:25px;
