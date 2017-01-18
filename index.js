@@ -20,4 +20,4 @@ app.use('/cont', contRouter);
 app.get('/search', searchRouter);
 app.get('/list', listRouter);
 
-app.listen(8888);
+app.listen(process.env.PORT || 5050);
