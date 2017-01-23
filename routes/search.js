@@ -3,7 +3,10 @@ var router = express.Router();
 
 router.use('/', function(req, res) {
     res.render('search',{
-        name: 'list'
+        name: 'list',
+        data:{
+            title:'home'
+        }
     });
 });
 
