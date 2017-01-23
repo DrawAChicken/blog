@@ -106,3 +106,8 @@ footer{
     min-height: 50px;
    background: #f0f0f0;
 }
+@media all and (max-width:750px){
+    nav p{
+        font-size: 12px;
+    }
+}
