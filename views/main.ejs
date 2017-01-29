@@ -2,77 +2,40 @@
 <section>
     <div class="content">
         <ul>
-            <li>
-                <div class="content-top">
-                    <h2><a href="/cont">标题标题标题标题标题</a></h2>
-                    <p>By <a href="/search" class="name">admin</a> on <a href="/search" class="date">Dec 7,2016</a></p>
-                </div>
-                <div class="content-botoom">
-                    <a href="/cont" class="pic"><img src="img/ceshi.png" alt=""></a>
-                    <div class="intro">
-                        <p class="info"><a href="/cont"><i class="iconfont">&#xe675;</i>简介简介简介简介简介简介简介简介简介简介简介简介简介简介...</a></p>
-                        <p class="stats-read">
-                            <span>10<i class="iconfont">&#xe677;</i></span>
-                            <span>10<i class="iconfont">&#xe6ad;</i></span>
-                            <span>10<i class="iconfont">&#xe65e;</i></span>
-                        </p>
-                        <nav>
-                            <a href="/cont">
-                                <img src="img/ceshi.png" alt="">
-                                <p>asdasdasdasasdasdasdasdasdd</p>
-                            </a>
-                            <a href="/cont">
-                                <img src="img/ceshi.png" alt="">
-                                <p>asdasdasdasasdasdasdasdasdd</p>
-                            </a>
-                            <a href="/cont">
-                                <img src="img/ceshi.png" alt="">
-                                <p>asdasdasdasasdasdasdasdasdd</p>
-                            </a>
-                            <a href="/cont">
-                                <img src="img/ceshi.png" alt="">
-                                <p>asdasdasdasasdasdasdasdasdd</p>
-                            </a>
-                        </nav>
-                        <div class="tags">
-                            <p>Tags
-                                <a href="/search">前端</a>
-                                <a href="/search">空间</a>
+            <% for(var i=0;i<arr.length;i++){ %>
+                <li>
+                    <div class="content-top">
+                        <h2><a href="/cont/<%= arr[i]._id %>"><%= arr[i].title %></a></h2>
+                        <p>By <a href="/search" class="name">admin</a> on <a href="/search" class="date"><%= arr[i].date %></a></p>
+                    </div>
+                    <div class="content-botoom">
+                        <a href="/cont/<%= arr[i]._id %>" class="pic"><img src="<%= arr[i].pic %>" alt=""></a>
+                        <div class="intro">
+                            <p class="info"><a href="/cont/<%= arr[i]._id %>"><i class="iconfont">&#xe675;</i><%= arr[i].title %></a></p>
+                            <p class="stats-read">
+                                <span>10<i class="iconfont">&#xe677;</i></span>
+                                <span>10<i class="iconfont">&#xe6ad;</i></span>
+                                <span>10<i class="iconfont">&#xe65e;</i></span>
                             </p>
+                            <nav>
+                                <% for(var j=0;j<arr.length;j++){ %>
+                                    <a href="/cont/<%= arr[j]._id %>">
+                                        <img src="<%= arr[j].pic %>" alt="">
+                                        <p><%= arr[j].title %></p>
+                                    </a>
+                                <% } %>
+                            </nav>
+                            <div class="tags">
+                                <p>Tags
+                                    <a href="/search"><%= arr[i].tag %></a>
+                                </p>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-            </li>
-            <li>
-                <div class="content-top">
-                    <h2><a href="">标题标题标题标题标题</a></h2>
-                    <p>By <a href="" class="name">admin</a> on <a href="" class="date">Dec 7,2016</a></p>
-                </div>
-                <div class="content-botoom">
-                    <a href="" class="pic"><img src="img/ceshi.png" alt=""></a>
-                    <div class="intro">
-                        <p class="info"><a href=""><i class="iconfont">&#xe675;</i>简介简介简介简介简介简介简介简介简介简介简介简介简介简介...</a></p>
-                        <p class="stats-read">
-                            <span>10<i class="iconfont">&#xe677;</i></span>
-                            <span>10<i class="iconfont">&#xe6ad;</i></span>
-                            <span>10<i class="iconfont">&#xe65e;</i></span>
-                        </p>
-                        <nav>
-                            <a href=""><img src="img/ceshi.png" alt=""></a>
-                            <a href=""><img src="img/ceshi.png" alt=""></a>
-                            <a href=""><img src="img/ceshi.png" alt=""></a>
-                            <a href=""><img src="img/ceshi.png" alt=""></a>
-                        </nav>
-                        <div class="tags">
-                            <p>Tags
-                                <a href="">前端</a>
-                                <a href="">空间</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </li>
+                </li>
+            <% } %>
+
         </ul>
     </div>
     <footer>
