@@ -51,4 +51,12 @@ $(function () {
             height:$('.h-n-a img').width()*0.75
         });
     });
+    // 搜索框
+    $('.search button').click(function() {
+        var v=$('.search input').val();
+        if(v){
+            window.location.href="/search/title="+v;
+        }
+    });
+
 });

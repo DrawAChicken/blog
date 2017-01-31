@@ -17,7 +17,7 @@ app.use(express.static("./public"));
 app.use('/', helloRouter);
 app.use('/home', homeRouter);
 app.use('/cont', contRouter);
-app.get('/search', searchRouter);
+app.use('/search', searchRouter);
 app.get('/list', listRouter);
 
 app.listen(process.env.PORT || 5050);

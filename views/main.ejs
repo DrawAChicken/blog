@@ -6,7 +6,7 @@
                 <li>
                     <div class="content-top">
                         <h2><a href="/cont/<%= arr[i]._id %>"><%= arr[i].title %></a></h2>
-                        <p>By <a href="/search" class="name">admin</a> on <a href="/search" class="date"><%= arr[i].date %></a></p>
+                        <p>By <a href="javascript:;" class="name">admin</a> on <a href="/search/date=<%= arr[i].date %>" class="date"><%= arr[i].date %></a></p>
                     </div>
                     <div class="content-botoom">
                         <a href="/cont/<%= arr[i]._id %>" class="pic"><img src="<%= arr[i].pic %>" alt=""></a>
@@ -27,7 +27,7 @@
                             </nav>
                             <div class="tags">
                                 <p>Tags
-                                    <a href="/search"><%= arr[i].tag %></a>
+                                    <a href="/search/<%= arr[i].tag %>" ><%= arr[i].tag %></a>
                                 </p>
 
                             </div>

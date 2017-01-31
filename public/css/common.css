@@ -136,6 +136,18 @@ header .tab i{
     background:#fff url("../img/icon-search.png") no-repeat 5px center;
     background-size:15px 15px;
 }
+.search button{
+    height: 20px;
+    position: absolute;
+    top:50%;
+    margin-top: -10px;
+    border: 0;
+    background: 0;
+    outline: inherit;
+    padding: 0;
+    right: 1px;
+    cursor: pointer;
+}
 .search ul{
     position: absolute;
     top:35px;
@@ -196,13 +208,15 @@ header .tab i{
         margin-bottom: 5px;
     }
     .nav .search input{
-        height:42px;
-    }
-    .nav .search input{
         width: 95%;
         height:30px;
         margin:0 auto;
         display: block;
+    }
+    .search button{
+        right: 3%;
+        margin-top: -13px;
+        letter-spacing: 2px;
     }
     .nav li:hover .nav li a{
         color: #fff;

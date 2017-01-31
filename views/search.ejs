@@ -2,55 +2,24 @@
 
 <section>
     <div class="l-top">
-        <p>"<b>前端</b>"搜索结果</p>
+        <p>"<b><%=data.title%></b>"搜索结果</p>
     </div>
     <div class="l-content">
         <ul>
-            <li>
-                <div>
-                    <a href=""><img src="img/ceshi.png" alt=""></a>
-                    <h2><a href="">标题标题标题标题标题题标题标题题标题标题题标题标题题标题标题题标题标题</a></h2>
-                    <p class="stats-read">
-                        <b>Tag: <a href="">前端、</a></b>
-                        <span>10<i class="iconfont">&#xe677;</i></span>
-                        <span>10<i class="iconfont">&#xe6ad;</i></span>
-                        <span>10<i class="iconfont">&#xe65e;</i></span>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href=""><img src="img/ceshi.png" alt=""></a>
-                    <h2><a href="">标题标题标题标题标题</a></h2>
-                    <p class="stats-read">
-                        <span>10<i class="iconfont">&#xe677;</i></span>
-                        <span>10<i class="iconfont">&#xe6ad;</i></span>
-                        <span>10<i class="iconfont">&#xe65e;</i></span>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href=""><img src="img/ceshi.png" alt=""></a>
-                    <h2><a href="">标题标题标题标题标题</a></h2>
-                    <p class="stats-read">
-                        <span>10<i class="iconfont">&#xe677;</i></span>
-                        <span>10<i class="iconfont">&#xe6ad;</i></span>
-                        <span>10<i class="iconfont">&#xe65e;</i></span>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href=""><img src="img/ceshi.png" alt=""></a>
-                    <h2><a href="">标题标题标题标题标题</a></h2>
-                    <p class="stats-read">
-                        <span>10<i class="iconfont">&#xe677;</i></span>
-                        <span>10<i class="iconfont">&#xe6ad;</i></span>
-                        <span>10<i class="iconfont">&#xe65e;</i></span>
-                    </p>
-                </div>
-            </li>
+            <% for(var i=0;i<arr.length;i++){ %>
+                <li>
+                    <div>
+                        <a href="/cont/<%= arr[i]._id %>" class="h-n-a"><img src="<%= arr[i].pic %>" alt=""></a>
+                        <h2><a href="/cont/<%= arr[i]._id %>"><%= arr[i].title %></a></h2>
+                        <p class="stats-read">
+                            <b>Tag: <a href="/search/<%= arr[i].tag %>" ><%= arr[i].tag %></a></b>
+                            <span>10<i class="iconfont">&#xe677;</i></span>
+                            <span>10<i class="iconfont">&#xe6ad;</i></span>
+                            <span>10<i class="iconfont">&#xe65e;</i></span>
+                        </p>
+                    </div>
+                </li>
+            <% } %>
         </ul>
     </div>
     <footer>

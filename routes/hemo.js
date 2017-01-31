@@ -6,14 +6,6 @@ var db=require('../modules/db');
 
 
 router.use('/', function(req, res) {
-    // res.render('main',{
-    //     name: 'home',
-    //     data:{
-    //         title:'欢迎来到slb的博客'
-    //     }
-    // });
-
-
     db.findOne('myblog',{},function (err,arr) {
         res.render('main',{
             arr:arr,
