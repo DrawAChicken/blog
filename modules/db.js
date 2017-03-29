@@ -1,7 +1,7 @@
 var mongoClient = require('mongodb').MongoClient;
 
 function _getDB(callback) {
-    var url="mongodb://shenlibo:shenlibo@ds050739.mlab.com:50739/slbblog";
+    var url="~~~~";
     mongoClient.connect(url,function (err,db) {
         if(err){
             console.log("链接数据库失败");
